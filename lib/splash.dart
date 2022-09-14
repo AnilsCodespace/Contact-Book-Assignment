@@ -41,7 +41,7 @@ class _ContactAppState extends State<ContactApp> {
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
                     fontStyle: FontStyle.italic,
-                    fontSize: 50),
+                    fontSize: 40),
               ),
             ],
           ),
