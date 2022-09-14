@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -15,14 +16,16 @@ class Home extends StatelessWidget {
       body: ListView(
         children: [
           ListTile(
-              subtitle: Text("6745231463"),
-              leading: CircleAvatar(
-                  foregroundImage: AssetImage('assets/avatargirl.jpg')),
-              title: Text("Ardra"),
-              trailing: Wrap(
-                spacing: 10,
-                children: [Icon(Icons.message_outlined), Icon(Icons.call)],
-              )),
+            subtitle: Text("6745231463"),
+            leading: CircleAvatar(
+                foregroundImage: AssetImage('assets/avatargirl.jpg')),
+            title: Text("Ardra"),
+            trailing: Wrap(
+              spacing: 10,
+              children: [Icon(Icons.message_outlined), Icon(Icons.call)],
+            ),
+            onTap: () {Fluttertoast.showToast(msg: "Classmate");}
+          ),
           ListTile(
               subtitle: Text("5437256535"),
               leading: CircleAvatar(
@@ -32,7 +35,8 @@ class Home extends StatelessWidget {
               trailing: Wrap(
                 spacing: 10,
                 children: [Icon(Icons.message_outlined), Icon(Icons.call)],
-              )),
+              ),
+              onTap: () {Fluttertoast.showToast(msg: "Room-mate");}),
           ListTile(
               title: Text("Anjali"),
               subtitle: Text("8354286552"),
@@ -42,7 +46,7 @@ class Home extends StatelessWidget {
               trailing: Wrap(
                 spacing: 10,
                 children: [Icon(Icons.message_outlined), Icon(Icons.call)],
-              )),
+              ), onTap: () {Fluttertoast.showToast(msg: "Classmate");}),
           ListTile(
               title: Text("Abraham"),
               subtitle: Text("976457387"),
@@ -53,7 +57,7 @@ class Home extends StatelessWidget {
               trailing: Wrap(
                 spacing: 10,
                 children: [Icon(Icons.message_outlined), Icon(Icons.call)],
-              )),
+              ), onTap: () {Fluttertoast.showToast(msg: "Room-mate");}),
           ListTile(
               title: Text("Benjamin"),
               subtitle: Text("465475558"),
@@ -63,7 +67,7 @@ class Home extends StatelessWidget {
               trailing: Wrap(
                 spacing: 10,
                 children: [Icon(Icons.message_outlined), Icon(Icons.call)],
-              )),
+              ), onTap: () {Fluttertoast.showToast(msg: "Collegemate");}),
           ListTile(
               title: Text("Sibin"),
               subtitle: Text("3653446536"),
@@ -73,7 +77,7 @@ class Home extends StatelessWidget {
               trailing: Wrap(
                 spacing: 10,
                 children: [Icon(Icons.message_outlined), Icon(Icons.call)],
-              )),
+              ), onTap: () {Fluttertoast.showToast(msg: "Room-mate");}),
           ListTile(
               title: Text("Alvin"),
               subtitle: Text("4436536354"),
@@ -83,7 +87,7 @@ class Home extends StatelessWidget {
               trailing: Wrap(
                 spacing: 10,
                 children: [Icon(Icons.message_outlined), Icon(Icons.call)],
-              )),
+              ), onTap: () {Fluttertoast.showToast(msg: "Room-mate");}),
           ListTile(
               title: Text("Albert"),
               subtitle: Text("756726526"),
@@ -93,7 +97,7 @@ class Home extends StatelessWidget {
               trailing: Wrap(
                 spacing: 10,
                 children: [Icon(Icons.message_outlined), Icon(Icons.call)],
-              )),
+              ), onTap: () {Fluttertoast.showToast(msg: "Room-mate");}),
           ListTile(
               title: Text("Jerin"),
               subtitle: Text("945543422"),
@@ -103,7 +107,7 @@ class Home extends StatelessWidget {
               trailing: Wrap(
                 spacing: 10,
                 children: [Icon(Icons.message_outlined), Icon(Icons.call)],
-              )),
+              ), onTap: () {Fluttertoast.showToast(msg: "Room-mate");}),
           ListTile(
               title: Text("Lidiya"),
               subtitle: Text("654365536"),
@@ -114,7 +118,7 @@ class Home extends StatelessWidget {
               trailing: Wrap(
                 spacing: 10,
                 children: [Icon(Icons.message_outlined), Icon(Icons.call)],
-              )),
+              ), onTap: () {Fluttertoast.showToast(msg: "Teacher");}),
           ListTile(
               title: Text("Sherin Paul"),
               subtitle: Text("5453827687"),
@@ -124,7 +128,7 @@ class Home extends StatelessWidget {
               trailing: Wrap(
                 spacing: 10,
                 children: [Icon(Icons.message_outlined), Icon(Icons.call)],
-              ))
+              ), onTap: () {Fluttertoast.showToast(msg: "🖤");})
         ],
       ),
     );
