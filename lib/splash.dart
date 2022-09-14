@@ -19,7 +19,7 @@ class ContactApp extends StatefulWidget {
 class _ContactAppState extends State<ContactApp> {
   @override
   void initState() {
-    Timer(Duration(seconds: 0), () {
+    Timer(Duration(seconds: 3), () {
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (context) => Home()));
     });
@@ -36,7 +36,7 @@ class _ContactAppState extends State<ContactApp> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "PEOPLES\nOF\nALAPPUZHA",
+                "F.R.I.E.N.D.S",
                 style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
