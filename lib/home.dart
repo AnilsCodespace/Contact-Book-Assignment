@@ -15,10 +15,10 @@ class Home extends StatelessWidget {
       backgroundColor: Colors.white54,
       body: ListView(
         children: [
-          Card(
+          Card(surfaceTintColor: Colors.amber,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadiusDirectional.circular(40)),
-            color: Colors.redAccent,shadowColor: Colors.blue,
+            color: Colors.redAccent,
             child: ListTile(
                 subtitle: Text("6745231463"),
                 leading: CircleAvatar(
